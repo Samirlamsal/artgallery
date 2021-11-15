@@ -157,3 +157,151 @@
     border-color: transparent
   }
 }
+
+.categories .title{
+  margin:40px 80px;
+}
+
+.categories .title h1{
+  font-family: "Mulish";
+  font-size: 90px;
+  font-weight:lighter;
+  color:rgb(68, 61, 61);
+  display: flex;
+  justify-content:flex-start;
+  
+  
+}
+
+
+.categories .title p{
+  font-family: "Mulish";
+  font-weight:500;
+  color:rgb(119, 116, 116);
+  margin-left: 60px;
+  letter-spacing: 0.04em;
+  width:50%;
+  line-height: 24px;
+  padding-top: 30px;
+  font-size: 15px;
+  
+}
+
+
+
+.categories .hr{
+  width:50%;
+  border-bottom: 1px solid rgb(68, 61, 61,0.3);
+  margin-left: 40px;
+  
+}
+
+.categories .content{
+  padding:10px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.categories .card{
+  width:240px;
+  height:350px;
+  box-shadow: 2px 2px 2px 2px #aeb3ae;
+  margin-bottom: 120px;
+
+
+  
+}
+
+
+
+.categories .content .card img{
+  max-width: 240px;
+  height: auto;
+
+}
+
+.categories .content .button{
+  position: relative;
+  bottom:45px;
+  height:40px;
+  text-align: right;
+  background-color: rgb(161, 154, 154, 0.5);
+  box-shadow: 2px 2px 2px 2px #aeb3ae;
+
+
+
+
+
+}
+
+.categories .content .button i{
+  padding:9px 70px;
+  color:white;
+}
+
+
+.categories .content img:hover{
+  background-color: #000;
+  opacity:0.5;
+  transition: 0.2s;
+
+} 
+
+ .categories .content .card .image:hover .button{
+  background-color: #c8c8ce;
+  transition: 0.8s;
+
+}
+
+.categories .content .card .button:hover{
+  cursor: pointer;
+  
+  
+}
+
+
+
+.categories .content .card .image:hover i{
+  color:rgb(68, 61, 61);
+  transform: scale(1.2);
+  transform: translateX(15px);
+  transition: 0.4s;
+  
+
+}
+
+.categories .content .detail{
+  width: 240px;
+  position: relative;
+  bottom:20px;
+
+}
+
+.categories .content .detail h2{
+  font-family: "Mulish";
+  font-weight: lighter;
+  color:rgb(119, 116, 116);
+
+
+}
+.categories .titlehr{
+  border-bottom: 1px solid rgb(119, 116, 116);
+  width: 50%;
+  padding-top: 5px;
+}
+
+
+.categories .card:nth-child(3n+2){
+  margin-top:30px;
+
+}
+
+.categories .card:nth-child(3n+3){
+  margin-top:60px;
+
+}
+
+

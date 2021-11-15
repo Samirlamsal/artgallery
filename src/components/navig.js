@@ -11,7 +11,7 @@ function Navig() {
 
 
     return (
-        <div className="navig">
+        <div className="navig" data-aos="fade-down">
             <div className="left">
                 <a href="/"><h2 >Logo</h2></a>
             </div>
