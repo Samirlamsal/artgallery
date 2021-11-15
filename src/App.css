@@ -1,5 +1,114 @@
-*{
-  margin:0;
-  padding:0;
-  scroll-behavior: smooth;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+.homepage{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('./images/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Alata', sans-serif;
+  min-height:110vh;
+}
+
+.navig {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #dfd1d1;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.left {
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.left h2 {
+  font-family: "Mulish";
+  font-size: 15px;
+  text-align: center;
+  color: #dfd1d1;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center ul {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.navig a {
+  color: #dfd1d1;
+  text-decoration: none;
+}
+
+.center ul li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0px 20px;
+  font-family: "Mulish";
+  font-size: 15px;
+  position: relative;
+  transition: top-ease;
+}
+
+.center ul li:nth-child(1) {
+  animation: 1s one;
+}
+
+.center ul li:nth-child(2) {
+  animation: 1.5s one;
+}
+
+.center ul li:nth-child(3) {
+  animation: 1.8s one;
+}
+
+.center ul li:nth-child(4) {
+  animation: 2s one;
+}
+.center ul li:nth-child(5) {
+  animation: 2.3s one;
+}
+
+@keyframes one {
+  0% {
+    opacity: 0;
+    bottom: 40px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+.navig .right {
+  padding: 20px;
+  padding-right: 40px;
+  font-size: 15px;
+}
+
+.navig .right i {
+  padding: 5px;
+}
+
+.navig .right i:hover {
+  cursor: pointer;
+}
+
+.hometitle h2{
+  font-family: 'Euphoria Script', cursive;
 }
