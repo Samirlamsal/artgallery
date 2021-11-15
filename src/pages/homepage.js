@@ -7,7 +7,10 @@ const Homepage = () => {
         <div className="homepage">
             <Navig />
             <div className="hometitle">
-                <h2>Kavya Arts</h2>
+                <h2>Kavya Kriti</h2>
+            </div>
+            <div className="homeextra">
+                <h3>By Kavya Pant</h3>
             </div>
         </div>
     )
