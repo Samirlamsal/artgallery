@@ -32,7 +32,7 @@
   font-family: "Mulish";
   font-size: 15px;
   text-align: center;
-  color: #dfd1d1;
+  color: #ffffff;
 }
 
 .center {
@@ -50,8 +50,9 @@
 }
 
 .navig a {
-  color: #dfd1d1;
+  color: #ffffff;
   text-decoration: none;
+  letter-spacing: 0.04em;
 }
 
 .center ul li {
@@ -103,6 +104,7 @@
 
 .navig .right i {
   padding: 5px;
+  color:white;
 }
 
 .navig .right i:hover {
@@ -133,21 +135,21 @@
 
 
 .homeextra h3 {
-  padding:10px 60px;
   font-family: "Mulish";
-  width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  width: 13ch;
+  animation: typing 1.2s steps(14), blink .8s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+  letter-spacing: 0.05em;
+  margin-right: 50px;
 }
 
 @keyframes typing {
   from {
     width: 0
   }
+ 
 }
     
 @keyframes blink {

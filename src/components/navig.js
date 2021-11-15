@@ -19,7 +19,7 @@ function Navig() {
                 <div className="center">
                     <ul>
                         <Link to="/"><li>Gallery</li></Link>
-                        <Link to="/"><li>Contacts</li></Link>
+                        <Link to="/"><li>Contact Me</li></Link>
                     </ul>
                 </div>)
             }
