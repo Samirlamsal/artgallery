@@ -13,11 +13,90 @@ const Gallery = () => {
         <div className="gallery">
             <Navig />
             <div className="gallerycontent">
-                {Gallerylist.map((file, key) => (
+                {/* {Gallerylist.map((file, key) => (
                     <div className="card" key={key}>
                         <img src="/categoryimages/bg1.jpg"></img>
                     </div>
-                ))}
+                ))} */}
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
+                <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>        <div className="gallary-container">
+                    <div className="gallery-item">
+                        <div className="image">
+                        <img src="/categoryimages/bg1.jpg"></img>
+                        </div>
+                        <div className="text">
+                            Image
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
