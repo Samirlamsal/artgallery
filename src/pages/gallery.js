@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Gallerylist from '../components/gallerylist';
 import Navig from '../components/navig'
 import { ImCross } from 'react-icons/im';
+import Footer from '../components/footer'
 
 const Gallery = () => {
     const { id } = useParams()
@@ -106,7 +107,8 @@ const Gallery = () => {
 
                 </div>}
 
-        </div>
+            <Footer />
+        </div >
     )
 }
 

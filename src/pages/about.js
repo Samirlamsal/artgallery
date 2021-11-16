@@ -3,6 +3,7 @@ import '../css/aboutme.css'
 import img from '../images/aboutimg.jpg'
 import Navig from '../components/navig'
 // import {AiFillFacebook} from 'react-icons/fa'
+import Footer from '../components/footer'
 
 import { SiFacebook, SiTiktok, SiInstagram } from 'react-icons/si'
 import { GrInstagram } from 'react-icons/gr'
@@ -49,9 +50,10 @@ const About = () => {
             <div className="socialmedia">
 
                 <h1>Connect With Me</h1>
-                <span><SiFacebook className="icon" />
-                    <GrInstagram className="icon" />
-                    <SiTiktok className="icon" /></span>
+                <span><a href='https://www.facebook.com' target="_blank"><SiFacebook className="icon" /></a>
+                <a href='https://www.instagram.com' target="_blank"><GrInstagram className="icon" /></a>
+                <a href='https://www.tiktok.com' target="_blank"><SiTiktok className="icon" /></a>
+                    </span>
                 <span className="contactmedia">
 
                     <span><GoLocation className="icon" /> Pokhara 16 Lamachaur </span>
@@ -98,6 +100,7 @@ const About = () => {
                 <circle cx="150" cy="150" r="90" stroke="transparent" stroke-width="1" fill="#663399ad" />
                 Sorry, your browser does not support inline SVG.
             </svg>
+            <Footer />
         </div>
     )
 }
