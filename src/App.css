@@ -211,8 +211,6 @@
   height:350px;
   box-shadow: 2px 2px 2px 2px #aeb3ae;
   margin-bottom: 120px;
-
-
   
 }
 
@@ -305,11 +303,6 @@
 
 }
 
-.gallery{
-  border:1px solid black;
-  padding:40px 60px;
-}
-
 
 .gallery img{
   max-width: 200px;
@@ -328,4 +321,18 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  padding:100px 60px;
+}
+
+.gallery .navig .left h2 {
+  color:rgb(34, 33, 33);
+}
+
+.gallery a{
+  color:rgb(34, 33, 33);
+
+}
+
+.gallery .navig .right i {
+  color:rgb(53, 51, 51);
 }
