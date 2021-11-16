@@ -2,7 +2,6 @@ import './App.css';
 import Homepage from './pages/homepage';
 import About from './pages/about';
 import Gallery from './pages/gallery';
-import Categories from './components/categorylist';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';

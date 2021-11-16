@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
-import Categories from "../components/categorylist";
 import Gallerylist from '../components/gallerylist';
 import Navig from '../components/navig'
 
