@@ -50,10 +50,10 @@ const About = () => {
             <div className="socialmedia">
 
                 <h1>Connect With Me</h1>
-                <span><a href='https://www.facebook.com' target="_blank"><SiFacebook className="icon" /></a>
-                <a href='https://www.instagram.com' target="_blank"><GrInstagram className="icon" /></a>
-                <a href='https://www.tiktok.com' target="_blank"><SiTiktok className="icon" /></a>
-                    </span>
+                <span><a href='https://www.facebook.com' target="_blank" rel="noreferrer"><SiFacebook className="icon" /></a>
+                    <a href='https://www.instagram.com' target="_blank" rel="noreferrer"><GrInstagram className="icon" /></a>
+                    <a href='https://www.tiktok.com' target="_blank" rel="noreferrer"><SiTiktok className="icon" /></a>
+                </span>
                 <span className="contactmedia">
 
                     <span><GoLocation className="icon" /> Pokhara 16 Lamachaur </span>

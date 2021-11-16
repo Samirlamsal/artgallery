@@ -44,7 +44,7 @@ const Category = () => {
                 {category.map((categories, key) => (
                     <div data-aos="fade-up" className="card" key={key}>
                         <div className="image">
-                            <img src={categories.image}></img>
+                            <img alt="" src={categories.image}></img>
                             <div className="button">
                                 <Link to={`/gallery/${categories.id}`}><i class="fa fa-arrow-right"></i></Link>
                             </div>
