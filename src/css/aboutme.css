@@ -1,6 +1,9 @@
 .main{
     background-color: #020202;
     color: blanchedalmond;  
+    font-family: "Mulish";
+font-weight: lighter;
+
 }
 .aboutcontact{
 
@@ -19,6 +22,7 @@ color: blanchedalmond;
 width: 65%;
 position: relative;
 z-index: 2;
+
 }
 
 .aboutcontact .aboutme .aboutmee{
@@ -31,6 +35,8 @@ z-index: 2;
     margin: 2rem 0;   
 
     font-size: 1.25rem;
+    font-family: "Mulish";
+    font-weight: lighter;
 }
 .aboutcontact .aboutme div img{
     width: 100%;
@@ -73,6 +79,11 @@ background-size: cover;
 .main .socialmedia h1{
     margin-top: 1rem;
     
+}
+.main .socialmedia span a{
+    text-decoration: none;
+    color: rgb(179, 196, 179);
+
 }
 .main .socialmedia span:nth-child(1n){
     /* margin: 0rem auto auto auto; */
@@ -171,7 +182,7 @@ background-size: cover;
     border-radius: 5px;
     padding: 0.5rem;
     
-    border: 2px double  rgba(2, 181, 184, 0.76);
+    border: 1px double  rgba(2, 181, 184, 0.452);
   
 }
 .main .contactus form span input{
@@ -184,10 +195,14 @@ background-size: cover;
     outline: 0;
     
     height: 100%;
-}.main .contactus form span input::placeholder,.main .contactus form span textarea::placeholder{
+}.main .contactus form span input::placeholder{
     color: wheat;
     font-size: 1.25rem;
  
+}
+.main .contactus form span textarea::placeholder{
+    color: wheat;
+    font-size: 1.5rem;
 }
 .main .contactus form span textarea{
     height: 100px;
@@ -196,7 +211,7 @@ resize: none;
     flex-direction: row;
     color: wheat;
     font-size: 1.5rem;
-    border: 2px double  rgba(2, 181, 184, 0.76);
+    border: 1px double  rgba(2, 181, 184, 0.466);
     align-items: center;
     outline: 0;
     background: transparent;
@@ -205,13 +220,13 @@ resize: none;
     /* border: 1px double rgb(0, 0, 0); */
 }
 .main .contactus form span .inputField:focus-within{
-    border: 2px double  rgba(2, 181, 184, 0.76);
+    border: 2px double  rgba(2, 181, 184, 0.336);
     
 }
 .main .contactus form span textarea:focus{
     outline: none !important;
 
-    border: 2px double  rgba(2, 181, 184, 0.76);
+    border: 2px double  rgba(2, 181, 184, 0.521);
     
     
 }
@@ -242,12 +257,12 @@ resize: none;
 
 }
 .main .contactus form .submitField:hover{
-    cursor: pointer;background: yellowgreen;
+    cursor: pointer;
+    background: rgba(153, 205, 50, 0.585);
 }
 .main .contactus form .submitField button:hover{
     cursor: pointer;
-    background: yellowgreen;
-}
+    background: rgba(153, 205, 50, 0.585);}
 
 
 @media only screen and (max-width: 600px) {
@@ -287,3 +302,15 @@ resize: none;
    
 }
 
+.main .copyright{
+    min-height: 50px;
+    font-family: "mulish";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* color:rgba(230, 203, 255, 0.897); */
+    font-family: "Mulish";
+    font-weight: lighter;
+    color: wheat;
+  }

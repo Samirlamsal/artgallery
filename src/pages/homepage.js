@@ -1,7 +1,7 @@
 import React from 'react';
 import Category from '../components/categories';
 import Navig from '../components/navig'
-
+import Footer from '../components/footer'
 
 
 const Homepage = () => {
@@ -18,6 +18,7 @@ const Homepage = () => {
                 </div>
             </div>
             <Category />
+            <Footer />
         </>
     )
 }
