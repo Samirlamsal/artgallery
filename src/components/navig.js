@@ -11,7 +11,7 @@ function Navig() {
 
 
     return (
-        <div className="navig">
+        <div className="navig" data-aos="fade-down">
             <div className="left">
                 <a href="/"><h2 >Logo</h2></a>
             </div>
@@ -19,7 +19,7 @@ function Navig() {
                 <div className="center">
                     <ul>
                         <Link to="/"><li>Gallery</li></Link>
-                        <Link to="/"><li>Contacts</li></Link>
+                        <Link to="/"><li>Contact Me</li></Link>
                     </ul>
                 </div>)
             }
