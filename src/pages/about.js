@@ -5,7 +5,7 @@ import Navig from '../components/navig'
 // import {AiFillFacebook} from 'react-icons/fa'
 import Footer from '../components/footer'
 
-import { SiFacebook, SiTiktok, SiInstagram } from 'react-icons/si'
+import { SiFacebook, SiTiktok } from 'react-icons/si'
 import { GrInstagram } from 'react-icons/gr'
 import { RiUser4Line } from 'react-icons/ri'
 import { MdOutlineMail, MdOutlineMarkEmailUnread } from 'react-icons/md'

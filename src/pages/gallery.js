@@ -55,7 +55,7 @@ const Gallery = () => {
     console.log(file)
     var category_name
     for (let i = 0; i < category.length; i++) {
-        if (category[i].id === id) {
+        if (category[i].id == id) {
             category_name = category[i].title
         }
     }
@@ -72,9 +72,9 @@ const Gallery = () => {
             <Navig />
             <div className="gallerycontent">
                 {file.map((file, key) => (
-                    file.category === id ? (
+                    file.category == id ? (
                         <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category })} key={key}>
-                            <img alt="" src={file.image}></img>
+                            <img src={file.image}></img>
                         </div>
                     ) :
                         null
@@ -85,7 +85,7 @@ const Gallery = () => {
                     <div className="modal">
                         <div className="left">
                             <div className="image">
-                                <img alt="" src={showmodal.image}></img>
+                                <img src={showmodal.image}></img>
                             </div>
                         </div>
                         <div className="right">
