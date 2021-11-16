@@ -336,3 +336,110 @@
 .gallery .navig .right i {
   color:rgb(53, 51, 51);
 }
+
+
+.gallery .bg-modal{
+  height: 100vh;
+  width:100%;
+  background-color: whitesmoke;
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+
+.gallery .modal{
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.gallery .modal .left{
+  max-width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  align-items: center;
+
+  
+}
+
+
+.gallery .modal img{
+  max-width: 100%;
+  max-height: 100vh;
+  height:auto;
+}
+
+
+
+
+
+.gallery .modal .right{
+  width:45%;
+  height:100vh;
+  padding-right: 5%;
+
+}
+
+.gallery .right .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:90vh;
+}
+
+.gallery .right .content .title{
+  text-align: center;
+}
+
+.gallery .right .content .title h1{
+  font-family: "Mulish";
+  font-weight: 400;
+  color:rgb(61, 59, 59);
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+}
+
+.gallery .right .content .title h2{
+  font-family: "Mulish";
+  font-weight: 400;
+  color:rgb(61, 59, 59);
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.gallery .right .content .title span{
+  font-weight: 200;
+  font-size: 18px;
+
+}
+
+
+
+
+.gallery .right .content .detail{
+  text-align: center;
+  margin:30px 10px;
+}
+
+.gallery .right .content .detail p{
+  font-family: "Mulish";
+  font-weight: 300;
+  color:rgb(61, 59, 59);
+  letter-spacing: 0.03em;
+}
+
+.gallery .modal .cross{
+  width:20px;
+  padding:3px;
+  height:20px;
+  position: absolute;
+  top:0px;
+  right:0;
+  margin:20px;
+  color:rgb(153, 154, 155);
+}
