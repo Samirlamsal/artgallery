@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 
@@ -283,7 +284,7 @@
 .categories .content .detail h2{
   font-family: "Mulish";
   font-weight: lighter;
-  color:rgb(119, 116, 116);
+  color:rgb(58, 57, 57);
 
 
 }
@@ -304,4 +305,27 @@
 
 }
 
+.gallery{
+  border:1px solid black;
+  padding:40px 60px;
+}
 
+
+.gallery img{
+  max-width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 2px 2px #c6cac6;
+
+}
+
+.gallery .card{
+  margin:20px 50px;
+
+}
+
+.gallery .gallerycontent{
+  display:flex ;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

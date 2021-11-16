@@ -18,7 +18,7 @@ function Navig() {
             {navig === true && (
                 <div className="center">
                     <ul>
-                        <Link to="/"><li>Gallery</li></Link>
+                        <a href="/#categories"><li>Gallery</li></a>
                         <Link to="/"><li>Contact Me</li></Link>
                     </ul>
                 </div>)
