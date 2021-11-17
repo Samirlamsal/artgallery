@@ -13,7 +13,7 @@ function Navig() {
     return (
         <div className="navig" data-aos="fade-down">
             <div className="left">
-                <a href="/"><h2 >Logo</h2></a>
+                <a href="/"><img src="logo/logo.png"></img></a>
             </div>
             {navig === true && (
                 <div className="center">
