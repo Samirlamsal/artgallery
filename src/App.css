@@ -592,6 +592,25 @@ object-position: center;
     width:100%;
   }
 
+  .navig .center ul{
+    padding:10px;
+  }
+
+  .navig .center ul li{
+    padding:8px;
+    text-align: center;
+  }
+
+  .navig .left{
+    margin:5px;
+  }
+
+  .navig .right{
+    padding:25px 10px;
+  }
+
+  
+
   
   
 }
@@ -605,3 +624,4 @@ object-position: center;
   }
 
 }
+
