@@ -13,7 +13,7 @@ function Navig() {
     return (
         <div className="navig" data-aos="fade-down">
             <div className="left">
-                <a href="/"><img src="logo/logo.png"></img></a>
+                <Link to="/"><img src="/logo/logo.png"></img></Link>
                 {/* <a href="/"><h2>Logo</h2></a> */}
             </div>
             {navig === true && (
