@@ -23,7 +23,7 @@ const Category = () => {
 
     const [category, setCategory] = useState([])
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/categories/')
+        fetch('https://bibekchalise.pythonanywhere.com/api/categories/')
             .then(response => response.json())
             .then(data =>
                 setCategory(data)

@@ -34,13 +34,13 @@ const Gallery = () => {
     const [file, setFile] = useState([])
     const [category, setCategory] = useState([])
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/files/')
+        fetch('https://bibekchalise.pythonanywhere.com/api/files/')
             .then(response => response.json())
             .then(data =>
                 setFile(data)
 
             )
-        fetch('http://127.0.0.1:8000/api/categories/')
+        fetch('https://bibekchalise.pythonanywhere.com/api/categories/')
             .then(response => response.json())
             .then(data => {
                 setCategory(data)
