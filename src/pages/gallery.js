@@ -70,7 +70,7 @@ const Gallery = () => {
     return (
         <div className="gallery">
             <Navig />
-            <div className="gallerycontent">
+            <div data-aos="fade-up" className="gallerycontent">
                 {file.map((file, key) => (
                     file.category == id ? (
                         <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category })} key={key}>
