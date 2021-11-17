@@ -170,7 +170,7 @@
   font-family: "Mulish";
   font-size: 90px;
   font-weight:lighter;
-  color:rgb(36, 32, 32);
+  color:rgb(109, 107, 107);
   display: flex;
   justify-content:flex-start;
   
@@ -181,7 +181,8 @@
 .categories .title p{
   font-family: "Mulish";
   font-weight:500;
-  color:rgb(43, 41, 41);
+  color:rgb(109, 107, 107);
+  /* color: rebeccapurple; */
   margin-left: 60px;
   letter-spacing: 0.04em;
   width:50%;
