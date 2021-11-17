@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import ClockLoader from "react-spinners/ClockLoader";
+
 
 
 const Category = () => {
@@ -19,14 +21,18 @@ const Category = () => {
         return cookieValue;
     }
     const csrftoken = getCookie('csrftoken');
+    const [loading, setLoading] = useState(true);
 
 
     const [category, setCategory] = useState([])
     useEffect(() => {
+        setLoading(true)
         fetch('https://bibekchalise.pythonanywhere.com/api/categories/')
             .then(response => response.json())
-            .then(data =>
+            .then(data => {
                 setCategory(data)
+                setLoading(false)
+            }
 
             )
     }, []);
@@ -41,19 +47,26 @@ const Category = () => {
                     expressed by paint on canvas that gets noticed and that touches us.</p>
             </div>
             <div className="content">
-                {category.map((categories, key) => (
-                    <div data-aos="fade-up" className="card" key={key}>
-                        <div className="image">
-                            <img alt="" src={categories.image}></img>
+                {
+                    loading === true ? (
+                        <div className="loader"><ClockLoader color={'black'} loading={loading} size={40} /></div>)
+                        : (
 
-                        </div>
-                        <div className="button">
-                            <Link to={`/gallery/${categories.id}`}><i class="fa fa-arrow-right"></i></Link>
-                        </div>
-                        <div className="detail">
-                            <h2 data-aos="fade-right">{categories.title}<div className="titlehr"></div></h2>
-                        </div>
-                    </div>))}
+                            category.map((categories, key) => (
+                                <div data-aos="fade-up" className="card" key={key}>
+                                    <div className="image">
+                                        <img alt="" src={categories.image}></img>
+
+                                    </div>
+                                    <div className="button">
+                                        <Link to={`/gallery/${categories.id}`}><i class="fa fa-arrow-right"></i></Link>
+                                    </div>
+                                    <div className="detail">
+                                        <h2 data-aos="fade-right">{categories.title}<div className="titlehr"></div></h2>
+                                    </div>
+                                </div>))
+
+                        )}
             </div>
         </div>
     )

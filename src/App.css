@@ -625,3 +625,18 @@ object-position: center;
 
 }
 
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  padding-top: 10%;
+}
+
+.homeloader{
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

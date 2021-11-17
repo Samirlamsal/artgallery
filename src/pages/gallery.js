@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import Navig from '../components/navig'
 import { ImCross } from 'react-icons/im';
 import Footer from '../components/footer'
+import ClockLoader from "react-spinners/ClockLoader";
+
 
 const Gallery = () => {
     const { id } = useParams()
@@ -29,15 +31,21 @@ const Gallery = () => {
         image: '',
         category: '',
     })
+    const [loading, setLoading] = useState(true);
+
 
 
     const [file, setFile] = useState([])
     const [category, setCategory] = useState([])
     useEffect(() => {
+        setLoading(true)
+
         fetch('https://bibekchalise.pythonanywhere.com/api/files/')
             .then(response => response.json())
-            .then(data =>
+            .then(data => {
                 setFile(data)
+                setLoading(false)
+            }
 
             )
         fetch('https://bibekchalise.pythonanywhere.com/api/categories/')
@@ -70,15 +78,24 @@ const Gallery = () => {
     return (
         <div className="gallery">
             <Navig />
+
             <div data-aos="fade-up" className="gallerycontent">
-                {file.map((file, key) => (
-                    file.category == id ? (
-                        <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category })} key={key}>
-                            <img src={file.image}></img>
-                        </div>
-                    ) :
-                        null
-                ))}
+                {
+                    loading === true ? (
+                        <div className="loader"><ClockLoader color={'black'} loading={loading} size={40} /></div>)
+                        : (
+                            file.map((file, key) => (
+                                file.category == id ? (
+                                    <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category })} key={key}>
+                                        <img src={file.image}></img>
+                                    </div>
+                                ) :
+                                    null
+                            ))
+                        )
+
+
+                }
             </div>
             {showmodal.active === true &&
                 <div className="bg-modal" data-aos="fade-right">
