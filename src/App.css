@@ -8,7 +8,7 @@
 
 
 .homepage{
-  background-image:linear-gradient(rgba(146, 139, 139, 0.8),rgba(34, 31, 31, 0.6)), url('./images/bg2.jpg');
+  background-image:linear-gradient(rgba(146, 139, 139, 0.2),rgba(34, 31, 31, 0.9)), url('./images/bg3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,12 +25,20 @@
   height: 75px;
 }
 
-.left {
-  padding: 20px;
-  padding-left: 40px;
+.navig .left {
+  margin: 10px;
+  margin-left: 40px;
+  /* border:1px solid wheat; */
+  border-radius: 90px;
+  height: 15vh;
+  width: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
 }
 
-.left h2 {
+.navig .left h2 {
   font-family: "Mulish";
   font-size: 15px;
   text-align: center;
@@ -39,6 +47,7 @@
 
 .navig .left img{
   height:10vh;
+  
 }
 
 .center {
@@ -227,12 +236,17 @@ background-size: cover; */
 }
 
 .categories .card{
+ 
+}
+
+.categories .card .image{
   width:240px;
   height:350px;
   box-shadow: 2px 2px 2px 2px #4c744c;
-  margin:90px 60px;
-  /* overflow: hidden; */
-  
+  margin:40px 60px;
+  overflow: hidden;
+  background-color: white;
+
 }
 
 
@@ -242,15 +256,19 @@ background-size: cover; */
   height: auto;
 
 
+
 }
 
 .categories .content .button{
-  position: relative;
-  bottom:45px;
-  height:40px;
+  position:relative;
+  width: 240px;
+  margin:0px 60px;
+  bottom:74px;
+
   text-align: right;
   background-color: rgba(122, 118, 118, 0.5);
   box-shadow: 2px 2px 2px 2px #aeb3ae;
+
 
 
 
@@ -286,7 +304,7 @@ background-size: cover; */
 
 
 
-.categories .content .card .image:hover i{
+.categories .content .card .button:hover i{
   color:rgb(68, 61, 61);
   transform: scale(1.2);
   transform: translateX(15px);
@@ -296,9 +314,8 @@ background-size: cover; */
 }
 
 .categories .content .detail{
-  width: 240px;
-  position: relative;
-  bottom:20px;
+  margin:0px 60px;
+  width:240px;
 
 }
 
@@ -367,15 +384,13 @@ object-position: center;
   opacity: 0.8;
   cursor: pointer;
 }
-
+/* 
 .gallery .navig .left h2 {
   color:rgb(34, 33, 33);
-}
+} */
 
-.gallery a{
-  color:rgb(34, 33, 33);
 
-}
+
 
 .gallery .navig .right i {
   color:rgb(53, 51, 51);
@@ -517,3 +532,4 @@ object-position: center;
 .cross:hover{
   cursor: pointer;
 }
+

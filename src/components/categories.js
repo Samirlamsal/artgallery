@@ -45,9 +45,10 @@ const Category = () => {
                     <div data-aos="fade-up" className="card" key={key}>
                         <div className="image">
                             <img alt="" src={categories.image}></img>
-                            <div className="button">
-                                <Link to={`/gallery/${categories.id}`}><i class="fa fa-arrow-right"></i></Link>
-                            </div>
+
+                        </div>
+                        <div className="button">
+                            <Link to={`/gallery/${categories.id}`}><i class="fa fa-arrow-right"></i></Link>
                         </div>
                         <div className="detail">
                             <h2 data-aos="fade-right">{categories.title}<div className="titlehr"></div></h2>
