@@ -98,7 +98,7 @@ const About = () => {
                     {/* <h1>I can give your business a new create start right away. </h1> */}
 
                     <p className="text">
-                        Yes, you’ve found me. And it’s not accidentally, because I’m a talented graphic designer from Moldova, and I’m one of the best. The reason of this is quite simple – I love what I do and I do it with quality, beauty and creativity.
+                        Yes, you’ve found me. And it’s not accidentally, because I’m a  talented graphic designer  from Moldova, and I’m one of the best. The reason of this is quite simple – I love what I do and I do it with quality, beauty and creativity.
                         I started my career in 2007.
                     </p>
                     <div>
