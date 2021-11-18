@@ -33,7 +33,8 @@ z-index: 2;
 }
 .aboutcontact .aboutme .text{
     margin: 2rem 0;   
-
+    text-align: justify;
+    word-wrap: break-word;
     font-size: 1.25rem;
     font-family: "Mulish";
     font-weight: lighter;
@@ -161,10 +162,7 @@ background-size: cover;
     color: rgb(255, 255, 255);
     color: wheat;
     display: flex;
-    flex-direction: column;
-
-
-    
+    flex-direction: column;    
 }
 .main .contactus form span label{
     margin:0 1rem 0rem 0;
@@ -181,7 +179,6 @@ background-size: cover;
     background: transparent;
     border-radius: 5px;
     padding: 0.5rem;
-    
     border: 1px double  rgba(2, 181, 184, 0.452);
   
 }
@@ -217,7 +214,6 @@ resize: none;
     background: transparent;
     border-radius: 5px;
     padding: 0.5rem;
-    /* border: 1px double rgb(0, 0, 0); */
 }
 .main .contactus form span .inputField:focus-within{
     border: 2px double  rgba(2, 181, 184, 0.336);
@@ -225,10 +221,7 @@ resize: none;
 }
 .main .contactus form span textarea:focus{
     outline: none !important;
-
-    border: 2px double  rgba(2, 181, 184, 0.521);
-    
-    
+    border: 2px double  rgba(2, 181, 184, 0.521);  
 }
 .main .contactus form .submitField{
     /* border: 1px solid rebeccapurple; */
@@ -239,7 +232,7 @@ resize: none;
     height: 40px;
     width: 150px;
     color: wheat;
-  
+    background: rgb(79, 154, 197);
     /* background: rgb(23, 65, 4); */
     font-size: 2rem;
     padding:0.5rem;
@@ -262,8 +255,18 @@ resize: none;
 }
 .main .contactus form .submitField button:hover{
     cursor: pointer;
-    background: rgba(153, 205, 50, 0.585);}
-
+}
+    .main .copyright{
+        min-height: 50px;
+        font-family: "mulish";
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: "Mulish";
+        font-weight: lighter;
+        color: wheat;
+      }
 
 @media only screen and (max-width: 600px) {
     .main{
@@ -276,41 +279,64 @@ resize: none;
     .aboutcontact{
         width: 95%;
     }
+    .aboutcontact .aboutme h1{
+        font-size: 1.3rem;
+    }
+    .aboutcontact .aboutme h3{
+        font-size: 1rem;
+    }
+    .aboutcontact .aboutme .text{
+        font-size: 1rem;
+    }
+    .main .socialmedia h1{
+        font-size: 1.3rem;        
+    }
+
+    .main .socialmedia span:nth-child(1n){  
+        font-size: 1rem;
+    }
+
+    .main .socialmedia .contactmedia span:nth-child(1n){
+        font-size: 1rem;
+    }
+    
     .main .contactus{
         width: 95%;
     }
+    .main .contactus h1{
+        font-size: 1.3rem;
+    }
     .main .contactus form span{
         min-width: 90%;
+        font-size: 1rem;
     }
- 
+   
+    .main .contactus form span label{
+        margin:0 1rem 0rem 0;
+        font-size: 1.2rem;
+    }
+    .main .contactus form span .inputField{
+        font-size: 1rem;
+    }
+   .main .contactus form span input::placeholder{
+        font-size: 1rem;
+     
+    }
+    .main .contactus form span textarea::placeholder{
+        font-size: 1.2rem;
+    }
+    .main .contactus form span textarea{
+        font-size: 1.1rem;
+    
+    }
     .main .contactus form .submitField{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        /* width: 150px; */
-        color: rgb(255, 255, 255);
-        /* margin: auto; */
-        background: rgb(79, 154, 197);
-        font-size: 2rem;
-        /* padding:0.5rem; */
-        border:none;
-        border-radius: 10px;
+        height: 30px;
+        font-size: 1rem;
+
     }
+    .main .copyright{
+        font-size: 12px;
+      }
    
 }
 
-.main .copyright{
-    min-height: 50px;
-    font-family: "mulish";
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* color:rgba(230, 203, 255, 0.897); */
-    font-family: "Mulish";
-    font-weight: lighter;
-    color: wheat;
-  }
