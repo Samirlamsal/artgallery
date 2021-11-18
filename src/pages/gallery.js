@@ -30,6 +30,8 @@ const Gallery = () => {
         name: '',
         image: '',
         category: '',
+        description: '',
+        added_on: '',
     })
     const [loading, setLoading] = useState(true);
 
@@ -86,7 +88,7 @@ const Gallery = () => {
                         : (
                             file.map((file, key) => (
                                 file.category == id ? (
-                                    <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category })} key={key}>
+                                    <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category, description: file.description, added_on: file.added_on })} key={key}>
                                         <img src={file.image}></img>
                                     </div>
                                 ) :
@@ -112,9 +114,7 @@ const Gallery = () => {
                                     <h2>Series: <span>{category_name}</span></h2>
                                 </div>
                                 <div className="detail">
-                                    <p>When inspiration comes to an artist, no matter whatever it is and wherever it comes from,
-                                        it makes him open up, expose his bare feelings to outsiders. It is exactly this openness
-                                        expressed by paint on canvas that gets noticed and that touches us.</p>
+                                    <p>{showmodal.description}</p>
                                 </div>
                             </div>
                             <div className="cross" onClick={() => { setshowmodal({ active: false }) }}><ImCross /></div>
