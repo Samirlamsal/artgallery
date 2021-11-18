@@ -54,7 +54,7 @@ const About = () => {
             alert('Message field empty')
         }
         else {
-            fetch("http://localhost:8000/contacts/", {
+            fetch("https://bibekchalise.pythonanywhere.com/contacts/", {
                 method: "POST",
                 body: JSON.stringify(formvalue),
                 headers: {
