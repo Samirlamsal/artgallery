@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/aboutme.css'
 import img from '../images/aboutimg.jpg'
 import Navig from '../components/navig'
-// import {AiFillFacebook} from 'react-icons/fa'
 import Footer from '../components/footer'
-
 import { SiFacebook, SiTiktok } from 'react-icons/si'
 import { GrInstagram } from 'react-icons/gr'
 import { RiUser4Line } from 'react-icons/ri'
@@ -15,7 +13,69 @@ import { BsTelephone } from 'react-icons/bs'
 
 
 
+
 const About = () => {
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+    const initialdata = {
+        name: '',
+        email: '',
+        message: '',
+    }
+    const [formvalue, setFormvalue] = useState(initialdata)
+
+    const handleinputChange = e => {
+        var { name, value } = e.target
+        setFormvalue({
+            ...formvalue,
+            [name]: value
+        })
+    }
+
+    const handleFormSubmit = e => {
+        e.preventDefault();
+        console.log(formvalue)
+        if (formvalue.message === null) {
+            alert('Message field empty')
+        }
+        else {
+            fetch("http://localhost:8000/contacts/", {
+                method: "POST",
+                body: JSON.stringify(formvalue),
+                headers: {
+                    "Content-type": "application/json",
+                    'X-CSRFToken': csrftoken
+                }
+            })
+
+                .then(response => response.json())
+            alert("Your message was received")
+            console.log(formvalue)
+
+
+        }
+
+    }
+
+
+
+
+
     return (
         <div className="main">
             <Navig />
@@ -66,14 +126,14 @@ const About = () => {
                 <h1>
                     Keen To Hear From YOU!
                 </h1>
-                <form>
+                <form onSubmit={handleFormSubmit}>
 
                     <span className='formtext'>
                         <label>Name</label>
                         <span className="inputField">
                             <RiUser4Line />
                             <input
-                                type='text' name="username" placeholder="Enter your full Name" required />
+                                type='text' value={formvalue.name} name="name" onChange={handleinputChange} id="name" placeholder="Enter your full Name" required />
                         </span>
                     </span>
                     <span className='formtext'>
@@ -81,13 +141,13 @@ const About = () => {
                         <span className="inputField">
                             <MdOutlineMail />
                             <input
-                                type='email' placeholder="Enter your full Name" required />
+                                value={formvalue.email} name="email" onChange={handleinputChange} id="email" type='email' placeholder="Enter your e-mail address" required />
                         </span>
                     </span>
                     <span className='formtext'>
                         <label>Message</label>
 
-                        <textarea placeholder="Enter Message"></textarea>
+                        <textarea value={formvalue.message} name="message" onChange={handleinputChange} id="message" placeholder="Enter Message"></textarea>
                     </span>
                     <span className="submitField">
                         <RiSendPlaneFill />
