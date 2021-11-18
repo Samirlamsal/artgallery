@@ -79,6 +79,9 @@ background-size: cover;
 }
 .main .socialmedia h1{
     margin-top: 1rem;
+    padding:20px 0;
+    font-family: "Mulish";
+    font-weight: 400;
     
 }
 .main .socialmedia span a{
@@ -94,7 +97,7 @@ background-size: cover;
 }
 .main .socialmedia span .icon{
     
-    padding: 1rem;
+    padding: 0.7rem;
 
 }
 .main .socialmedia span .icon:hover{
@@ -112,9 +115,11 @@ background-size: cover;
     justify-content: center;
 
 }
+
 .main .socialmedia .contactmedia span{
 display: flex;
 align-items: center;
+padding:0px;
 
 }
 .main .socialmedia .contactmedia span a{
@@ -139,6 +144,11 @@ align-items: center;
     justify-content: center;
 }
 
+.main .contactus h1{
+    padding:20px 0px;
+    font-family: "Mulish";
+    font-weight: 400;
+}
 .main .contactus form{
     display: flex;
     flex-direction: column;
@@ -166,7 +176,10 @@ background-size: cover;
 }
 .main .contactus form span label{
     margin:0 1rem 0rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: "Mulish";
+    font-weight: 400;
+
 }
 .main .contactus form span .inputField{
     height: 35px;
@@ -179,41 +192,52 @@ background-size: cover;
     background: transparent;
     border-radius: 5px;
     padding: 0.5rem;
-    border: 1px double  rgba(2, 181, 184, 0.452);
+    border: 1px double  rgba(13, 84, 85, 0.466);
   
 }
 .main .contactus form span input{
     border: 0;
     margin-left: 1rem;
     color: wheat;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background: transparent;
     width: 100%;
+    font-weight: lighter;
+    font-family: "Mulish";
     outline: 0;
     
     height: 100%;
 }.main .contactus form span input::placeholder{
-    color: wheat;
-    font-size: 1.25rem;
+    color: rgb(158, 148, 129);
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: "Mulish";
  
 }
 .main .contactus form span textarea::placeholder{
-    color: wheat;
-    font-size: 1.5rem;
+    color: rgb(158, 148, 129);
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    font-weight: lighter;
+    font-family: "Mulish";
 }
 .main .contactus form span textarea{
     height: 100px;
-resize: none;
+    resize: none;
     display: flex;
     flex-direction: row;
     color: wheat;
-    font-size: 1.5rem;
-    border: 1px double  rgba(2, 181, 184, 0.466);
+    font-size: 1rem;
+    border: 1px double  rgba(13, 84, 85, 0.466);
     align-items: center;
     outline: 0;
     background: transparent;
     border-radius: 5px;
+    font-family: "Mulish";
+    font-weight: lighter;
     padding: 0.5rem;
+    margin-top: 1rem;
+    
 }
 .main .contactus form span .inputField:focus-within{
     border: 2px double  rgba(2, 181, 184, 0.336);
@@ -326,10 +350,11 @@ resize: none;
      
     }
     .main .contactus form span textarea::placeholder{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .main .contactus form span textarea{
-        font-size: 1.1rem;
+        font-size: 1rem;
+        
     
     }
     .main .contactus form .submitField{
