@@ -288,6 +288,9 @@ resize: none;
     .aboutcontact .aboutme .text{
         font-size: 1rem;
     }
+    .main .socialmedia {
+        width: 95%;
+    }
     .main .socialmedia h1{
         font-size: 1.3rem;        
     }
@@ -339,4 +342,3 @@ resize: none;
       }
    
 }
-
