@@ -49,12 +49,11 @@ const About = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault();
-        console.log(formvalue)
         if (formvalue.message === null) {
             alert('Message field empty')
         }
         else {
-            fetch("https://bibekchalise.pythonanywhere.com/contacts/", {
+            fetch("https://dashboard.kavyakriti.com/api/contacts/", {
                 method: "POST",
                 body: JSON.stringify(formvalue),
                 headers: {
@@ -64,8 +63,7 @@ const About = () => {
             })
 
                 .then(response => response.json())
-            alert("Your message was received")
-            console.log(formvalue)
+            setFormvalue(initialdata)
 
 
         }

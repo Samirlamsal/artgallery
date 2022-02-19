@@ -8,22 +8,22 @@ import ClockLoader from "react-spinners/ClockLoader";
 
 const Gallery = () => {
     const { id } = useParams()
-    function getCookie(name) {
-        let cookieValue = null;
-        if (document.cookie && document.cookie !== '') {
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                const cookie = cookies[i].trim();
-                // Does this cookie string begin with the name we want?
-                if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return cookieValue;
-    }
-    const csrftoken = getCookie('csrftoken');
+    // function getCookie(name) {
+    //     let cookieValue = null;
+    //     if (document.cookie && document.cookie !== '') {
+    //         const cookies = document.cookie.split(';');
+    //         for (let i = 0; i < cookies.length; i++) {
+    //             const cookie = cookies[i].trim();
+    //             // Does this cookie string begin with the name we want?
+    //             if (cookie.substring(0, name.length + 1) === (name + '=')) {
+    //                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     return cookieValue;
+    // }
+    // const csrftoken = getCookie('csrftoken');
     const [showmodal, setshowmodal] = useState({
         active: false,
         id: '',
@@ -42,7 +42,7 @@ const Gallery = () => {
     useEffect(() => {
         setLoading(true)
 
-        fetch('https://bibekchalise.pythonanywhere.com/api/files/')
+        fetch('https://dashboard.kavyakriti.com/api/data/files/')
             .then(response => response.json())
             .then(data => {
                 setFile(data)
@@ -50,19 +50,16 @@ const Gallery = () => {
             }
 
             )
-        fetch('https://bibekchalise.pythonanywhere.com/api/categories/')
+        fetch('https://dashboard.kavyakriti.com/api/data/categories/')
             .then(response => response.json())
             .then(data => {
                 setCategory(data)
-                console.log(data)
             }
 
             )
 
     }, []);
-    console.log(showmodal)
-    console.log(category)
-    console.log(file)
+
     var category_name
     for (let i = 0; i < category.length; i++) {
         if (category[i].id == id) {
@@ -70,7 +67,6 @@ const Gallery = () => {
         }
     }
 
-    console.log(category_name)
 
 
 
@@ -89,7 +85,7 @@ const Gallery = () => {
                             file.map((file, key) => (
                                 file.category == id ? (
                                     <div className="card" onClick={() => setshowmodal({ active: true, id: file.id, name: file.name, image: file.image, category: file.category, description: file.description, added_on: file.added_on })} key={key}>
-                                        <img src={file.image}></img>
+                                        <img alt="" src={file.image}></img>
                                     </div>
                                 ) :
                                     null
@@ -104,7 +100,7 @@ const Gallery = () => {
                     <div className="modal">
                         <div className="left">
                             <div className="image">
-                                <img src={showmodal.image}></img>
+                                <img alt="" src={showmodal.image}></img>
                             </div>
                         </div>
                         <div className="right">
